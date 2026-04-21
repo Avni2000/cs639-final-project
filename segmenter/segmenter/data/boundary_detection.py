@@ -82,7 +82,7 @@ def is_trigger_sentence(sentence: str) -> bool:
 
 
 
-def detect_spans(text: str) -> List[tuple[int, int, str, bool]]:
+def split_into_spans(text: str) -> List[Tuple[int, int, str, bool]]:
     """
     Detect candidate reasoning spans in the text, or simply put it,
     detect sentence boundaries => split text into sentences, 
@@ -121,7 +121,7 @@ if __name__ == "__main__":    # Example usage
     So, the derivative is f'(x) = 2x. However, we also need to consider the second derivative.
     The second derivative is f''(x) = 2.
     """
-    spans = detect_spans(example_text)
+    spans = split_into_spans(example_text)
     for start, end, span, is_trigger in spans:
         print(f"Span: '{span}' (Trigger: {is_trigger})")
         print(f"Chars: ({start}, {end})")
