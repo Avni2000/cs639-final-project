@@ -98,10 +98,23 @@ build_dataset.py does not create the labels itself.
 It only organizes spans that have already been labeled.
 
 
-#### Order of priority for the segmenter/data:
 
-1. boundary_detection.py - done?
-2. hand_annotate.py
-3. llm_judge_labeler.py
-4. build_dataset.py
+
+#### Team members roles (in order of priority):
+
+Jesse:
+* segmenter/data/boundary_detection.py - done (i think)
+* segmenter/model/classifier.py
+* segmenter/inference/segmenter_pipeline.py
+* segmenter/inference/probe_selector.py
+
+Bin:
+* segmenter/data/hand_annotate.py
+* segmenter/data/llm_judge_labeler.py
+* segmenter/data/build_dataset.py
+
+
+Srinivas:
+* segmenter/model/train_segmenter.py
+* segmenter/model/evaluate_segmenter.py   # optional if time
 
