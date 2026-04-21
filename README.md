@@ -1,7 +1,7 @@
 # cs639-final-project
 
 ## Getting Started
-- **Model**: DeepSeek-R1-Distill-Qwen-7B 
+- **Model**: [DeepSeek-R1-Distill-Qwen-7B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B)
   - We should check that this has clean COT on some AIME problems! Not too late to change. This'll make the difference in how easy of a job the segmenter group has.
 - **Dataset**: [gneubig/aime-1983-2024](https://huggingface.co/datasets/gneubig/aime-1983-2024)
 -  Need to figure out what math dataset to use + construct a prompt
