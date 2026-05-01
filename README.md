@@ -15,9 +15,9 @@
        - `number of paragraph sampled` is every paragraph (denoted by `\n\n`) unless there are more than a 100 paragraphs, in which case we cap it at 100 and choose 100 paragraphs at uniform.
           - We grab the hidden states at the last token before the next paragraph.
        - `3584` denotes the fact that each hidden state vector has 3584 elements to it. i.e. it's a list of size 3584.
-    - `model_answer` - the answer our grading library thinks our model outputted
-    - `label` - 1 if the `model_answer` aligns up with the aime answer from the dataset, and 0 if it's wrong.
-    - `truncated` - 1 if model hit max tokens, 8192, and we stopped/truncated its response. 0 if it stopped before then. 
+    - `model_answer` - the answer our grading library thinks our model outputted (eg. 60)
+    - `label` - 1 if the `model_answer` aligns up with the aime answer from the dataset, and 0 if it's wrong. (eg. is 60 the right answer?)
+    - `truncated` - 1 if model hit max tokens, 8192, and we stopped/truncated its response. 0 if it stopped before then.
 
 ## Group 1: Segmenter
  - Names: Jesse, Bin, Srinivas
