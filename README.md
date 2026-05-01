@@ -19,6 +19,9 @@
     - `label` - 1 if the `model_answer` aligns up with the aime answer from the dataset, and 0 if it's wrong. (eg. is 60 the right answer?)
     - `truncated` - 1 if model hit max tokens, 8192, and we stopped/truncated its response. 0 if it stopped before then.
 
+**HDF5 files are too big to keep in github**
+- I put mine in https://drive.google.com/drive/folders/1WujWT-eqJyFdR9jFdCmtpxj0-7M__nt-?usp=sharing
+
 ## Group 1: Segmenter
  - Names: Jesse, Bin, Srinivas
  - See the segmenter folder, figure out what the process will be for training the segmenter. See [proposal](https://docs.google.com/document/d/1dK0CqPyt1aeBTjCyhV2PXzmUZhFl8OiqSEfv2pHNcy4/edit?tab=t.58l62yvrd8rt) + [Jesse's notes on doc](https://docs.google.com/document/d/1dK0CqPyt1aeBTjCyhV2PXzmUZhFl8OiqSEfv2pHNcy4/edit?tab=t.6lhl9j1n63ui)  
