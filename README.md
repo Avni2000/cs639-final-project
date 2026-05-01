@@ -4,10 +4,20 @@
 
 ## Getting Started
 - **Model**: [DeepSeek-R1-Distill-Qwen-7B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B)
-  - We should check that this has clean COT on some AIME problems! Not too late to change. This'll make the difference in how easy of a job the segmenter group has.
 - **Dataset**: [gneubig/aime-1983-2024](https://huggingface.co/datasets/gneubig/aime-1983-2024)
--  Need to figure out what math dataset to use + construct a prompt
-- Is there anything else I'm missing? 
+- **HDF5 files**: Contain:
+  - For every problem `problem_<n>`: 
+    - `cot_trace`, which has an error but fixable [cot_trace](cot_trace.md) for an example
+       - The error is that the model outputs `</think>` (end tag) but not `<think>` (start tag). So our extraction logic just to get the COT fails. 
+          - Can be computed later.
+    - `raw_output`, same as COT trace with error; just the raw text output of the whole thing for backup.
+    - Hidden States ` hidden_states`: A matrix of shape `number of paragraphs sampled` $\times$ `3584`
+       - `number of paragraph sampled` is every paragraph (denoted by `\n\n`) unless there are more than a 100 paragraphs, in which case we cap it at 100 and choose 100 paragraphs at uniform.
+          - We grab the hidden states at the last token before the next paragraph.
+       - `3584` denotes the fact that each hidden state vector has 3584 elements to it. i.e. it's a list of size 3584.
+    - `model_answer` - the answer our grading library thinks our model outputted
+    - `label` - 1 if the `model_answer` aligns up with the aime answer from the dataset, and 0 if it's wrong.
+    - `truncated` - 1 if model hit max tokens, 8192, and we stopped/truncated its response. 0 if it stopped before then. 
 
 ## Group 1: Segmenter
  - Names: Jesse, Bin, Srinivas
