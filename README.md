@@ -20,7 +20,8 @@
     - `truncated` - 1 if model hit max tokens, 8192, and we stopped/truncated its response. 0 if it stopped before then.
 
 **HDF5 files are too big to keep in github**
-- I put mine in https://drive.google.com/drive/folders/1WujWT-eqJyFdR9jFdCmtpxj0-7M__nt-?usp=sharing
+- 0-250 problems https://drive.google.com/drive/folders/1WujWT-eqJyFdR9jFdCmtpxj0-7M__nt-?usp=sharing [Avni]
+- 250-500 problems https://drive.google.com/drive/folders/1_a5mPo349J-k76rkoylSIO6T8C2PfOmb?usp=sharing [Gayathri]
 
 ## Group 1: Segmenter
  - Names: Jesse, Bin, Srinivas
