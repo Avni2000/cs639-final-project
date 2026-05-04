@@ -22,6 +22,7 @@
 **HDF5 files are too big to keep in github**
 - 0-250 problems https://drive.google.com/drive/folders/1WujWT-eqJyFdR9jFdCmtpxj0-7M__nt-?usp=sharing [Avni]
 - 250-500 problems https://drive.google.com/drive/folders/1_a5mPo349J-k76rkoylSIO6T8C2PfOmb?usp=sharing [Gayathri]
+- 500-575 problems https://drive.google.com/drive/folders/1DiTCFd3ff7qCmJmulh8IE3U4vp1Q3fU4?usp=drive_link [Dharini]
 
 ## Group 1: Segmenter
  - Names: Jesse, Bin, Srinivas
