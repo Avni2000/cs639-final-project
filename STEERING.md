@@ -18,10 +18,6 @@ $$= c$$
 
 So **v literally recovers c**, which is the exact translation between the two distributions.
 
-The intuition this unlocks is nice: if you believe the successful and unsuccessful hidden states are roughly the same "shape" in activation space but just offset from each other, then adding $\vec{v} \times \alpha$ to a failing hidden state is geometrically moving it toward where the successful states live. You're not doing anything magical — you're just translating it by (a scaled fraction of) that offset.
-
-The assumption $h_+ = h_- + c$ is obviously a simplification — real distributions won't be perfect translates of each other — but it's a clean justification for why the mean-difference vector is a principled thing to steer with, rather than an arbitrary choice.
-
 ---
 
 
