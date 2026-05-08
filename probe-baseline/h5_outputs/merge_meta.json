@@ -1,0 +1,87 @@
+{
+  "shards": [
+    {
+      "file": "shard_Dharini.h5",
+      "NAME": "?",
+      "range": "?..?",
+      "positions": 9737,
+      "unique_problems": 102,
+      "correct": 52,
+      "incorrect": 9685,
+      "MAX_NEW_TOKENS": null,
+      "PROBE_LAYER": null,
+      "HIDDEN_DIM": null,
+      "MODEL_ID": null
+    },
+    {
+      "file": "shard_RRR.h5",
+      "NAME": "?",
+      "range": "?..?",
+      "positions": 6593,
+      "unique_problems": 70,
+      "correct": 36,
+      "incorrect": 6557,
+      "MAX_NEW_TOKENS": null,
+      "PROBE_LAYER": null,
+      "HIDDEN_DIM": null,
+      "MODEL_ID": null
+    },
+    {
+      "file": "shard_avni.h5",
+      "NAME": "avni",
+      "range": "0..120",
+      "positions": 10731,
+      "unique_problems": 120,
+      "correct": 78,
+      "incorrect": 10653,
+      "MAX_NEW_TOKENS": 8192,
+      "PROBE_LAYER": -1,
+      "HIDDEN_DIM": 3584,
+      "MODEL_ID": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+    },
+    {
+      "file": "shard_avni2.h5",
+      "NAME": "avni2",
+      "range": "120..250",
+      "positions": 12072,
+      "unique_problems": 130,
+      "correct": 74,
+      "incorrect": 11998,
+      "MAX_NEW_TOKENS": 8192,
+      "PROBE_LAYER": -1,
+      "HIDDEN_DIM": 3584,
+      "MODEL_ID": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+    },
+    {
+      "file": "shard_gayu_250_375.h5",
+      "NAME": "gayu",
+      "range": "250..375",
+      "positions": 11971,
+      "unique_problems": 125,
+      "correct": 78,
+      "incorrect": 11893,
+      "MAX_NEW_TOKENS": 8192,
+      "PROBE_LAYER": -1,
+      "HIDDEN_DIM": 3584,
+      "MODEL_ID": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+    },
+    {
+      "file": "shard_gayu_375_500.h5",
+      "NAME": "gayu",
+      "range": "375..500",
+      "positions": 11881,
+      "unique_problems": 125,
+      "correct": 69,
+      "incorrect": 11812,
+      "MAX_NEW_TOKENS": 8192,
+      "PROBE_LAYER": -1,
+      "HIDDEN_DIM": 3584,
+      "MODEL_ID": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+    }
+  ],
+  "total_positions": 62985,
+  "hidden_dim": 3584,
+  "unique_problems": 672,
+  "n_correct_positions": 34869,
+  "n_incorrect_positions": 28116
+}
